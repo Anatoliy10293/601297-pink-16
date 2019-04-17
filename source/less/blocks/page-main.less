@@ -1,5 +1,4 @@
 .page-main__bg {
-  display: block;
   width: 320px;
   height: 395px;
   margin-top: -14px;
@@ -8,4 +7,17 @@
 
 .page-main__image {
   margin-top: 109px;
+}
+
+@media (min-width: 660px) {
+  .page-main__big-bg {
+  display: flex;
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-size: cover;
+  }
+  .page-main__bg {
+  height: 629px;
+  order: 2;
+  background-image: none;
+  }
 }

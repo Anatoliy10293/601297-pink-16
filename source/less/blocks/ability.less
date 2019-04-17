@@ -27,15 +27,33 @@
   margin: 0;
 }
 
-.ability__bg {
-  display: block;
-  margin: 0 auto;
-  background-image: url(../img/iphone-screen-mobile@1x.png);
-  width: 157px;
-  height: 277px;
-}
-
 .ability__description {
   margin-top: 12px;
   margin-bottom: 31px;
+}
+
+@media (min-width: 660px) {
+  .ability__text {
+    font-size: 40px;
+    margin: 0;
+    margin-top: 55px;
+  }
+  .ability__text--indent {
+    padding-left: 130px;
+    padding-right: 130px;
+    line-height: 50px;
+    margin-top: 20px;
+  }
+  .ability__list {
+    margin-top: 45px;
+    order: 2;
+    padding-left: 45px;
+  }
+  .ability__wrapper {
+    display: flex;
+    margin-top: 45px;
+  }
+  .ability__item {
+    text-align: left;
+  }
 }

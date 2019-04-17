@@ -21,12 +21,49 @@
 
 .download__button:hover {
   cursor: pointer;
+  background-color: #ffffff;
+  color: #d22856;
+}
+
+.download__button:focus,
+.download__button:active {
+  color: #f2ced5;
 }
 
 .download__info {
+  font-size: 18px;
   color: #ffffff;
   font-family: "opensanslight", "Arial", sans-serif;
   margin-top: 111px;
   margin-bottom: 40px;
   padding-bottom: 30px;
+}
+
+@media (min-width: 660px) {
+  .download {
+    background-color: transparent;
+    }
+}
+
+.download__caption {
+  color: #ffffff;
+  font-size: 40px;
+  line-height: 50px;
+  font-family: "opensanslight", "Arial", sans-serif;
+  font-weight: 100;
+}
+.download__caption--hidden {
+  display: none;
+}
+@media (min-width: 660px) {
+  .download__caption {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .download__caption--hidden {
+    display: block;
+  }
+  .download__button {
+    width: 300px;
+  }
 }

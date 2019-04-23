@@ -1,4 +1,38 @@
+.page-footer {
+  position: relative;
+}
+
+.page-footer--none {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .page-footer {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-around;
+  }
+}
+
 .page-footer__developer {
   line-height: 18px;
   color: #283645;
+}
+
+.page-footer__logo::before {
+  content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 146px;
+    height: 40px;
+    background-image: url(../img/logo-pink-blue-mobile.svg);
+    background-repeat: no-repeat;
+}
+
+.page-footer__list {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
 }

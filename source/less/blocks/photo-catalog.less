@@ -71,20 +71,38 @@
   padding-top: 18px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (min-width: 660px) {
+  .photo-catalog__head {
+    height: 330px;
+    padding-top: 70px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .photo-catalog__description {
+    font-size: 18px;
+    padding: 55px 110px 35px 110px;
+  }
+  .photo-catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .photo-catalog__item {
+    width: 300px;
+  }
+  .photo-catalog__item:first-child {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .photo-catalog__head {
+    padding-left: 420px;
+    padding-right: 420px;
+  }
+  .photo-catalog__item {
+    margin-right: 20px;
+  }
+}
 
 
 

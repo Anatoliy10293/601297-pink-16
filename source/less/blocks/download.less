@@ -2,7 +2,7 @@
   background-color: #1d2631;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 28px;
+  padding-top: 29px;
   text-align: center;
 }
 
@@ -10,19 +10,121 @@
   font-size: 18px;
   line-height: 18px;
   width: 280px;
-  height: 50px;
+  height: 54px;
+  font-family: "opensansbold", "Arial", sans-serif;
   color: #ffffff;
   background-color: #1d2631;
   border: 3px solid #ffffff;
   border-radius: 25px;
   padding: 15px;
+  margin-bottom: 30px;
 }
 
 .download__button:hover {
   cursor: pointer;
+  background-color: #ffffff;
+  color: #d22856;
+}
+
+.download__button:focus,
+.download__button:active {
+  color: #f2ced5;
 }
 
 .download__info {
+  font-size: 18px;
   color: #ffffff;
+  font-family: "opensanslight", "Arial", sans-serif;
+  margin-top: 111px;
   margin-bottom: 40px;
+  padding-bottom: 30px;
 }
+
+.download__list {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  list-style: none;
+  padding-left: 37px;
+  padding-right: 84px;
+}
+
+.download__item {
+  position: relative;
+}
+
+.download__icon {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.download__icon--apple {
+  width: 47px;
+  height: 57px;
+  top: -11px;
+  left: -2px;
+  background-image: url(../img/logo-apple.svg);
+}
+
+.download__icon--android {
+  width: 43px;
+  height: 48px;
+  top: -5px;
+  left: 3px;
+  background-image: url(../img/logo-android.svg);
+}
+
+.download__icon--windows {
+  width: 44px;
+  height: 42px;
+  top: 1px;
+  left: 3px;
+  background-image: url(../img/logo-microsoft.svg);
+}
+
+.download__caption {
+  color: #ffffff;
+  font-size: 40px;
+  line-height: 50px;
+  font-family: "opensanslight", "Arial", sans-serif;
+  font-weight: 100;
+}
+.download__caption--hidden {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .download {
+    background-color: transparent;
+    }
+  .download {
+    background-color: transparent;
+  }
+  .download__list {
+    padding-left: 80px;
+    padding-right: 127px;
+  }
+  .download__caption {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .download__caption--hidden {
+    display: block;
+  }
+  .download__button {
+    width: 300px;
+    margin-bottom: 45px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .download {
+    width: 350px;
+  }
+  .download__caption {
+    font-size: 50px;
+  }
+}
+
